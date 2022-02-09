@@ -1,5 +1,5 @@
-.container {
-  @apply h-full w-full bg-[url("/img/bg-header-desktop.svg")] bg-no-repeat font-spartan;
+.header {
+  @apply w-full font-spartan mt-[100px];
 
   .searchBar {
     @apply bg-white rounded-[5px] flex flex-col overflow-hidden p-[20px] pr-[24px];

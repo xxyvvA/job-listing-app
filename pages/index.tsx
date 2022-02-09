@@ -13,7 +13,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head />
-      <div className={styles.container}>
+      <header className={styles.header}>
         <div className={clsx(styles.searchBar, tags.length > 0 && styles.active)}>
           <div className={styles.input}>
             <input
@@ -40,7 +40,7 @@ const Home: NextPage = () => {
             })}
           </div>
         </div>
-      </div>
+      </header>
     </>
   );
 };
