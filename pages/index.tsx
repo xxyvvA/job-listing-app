@@ -14,7 +14,7 @@ const Home: NextPage = () => {
     <>
       <Head />
       <div className={styles.container}>
-        <div className={clsx(styles.header, tags.length > 0 && styles.active)}>
+        <div className={clsx(styles.searchBar, tags.length > 0 && styles.active)}>
           <div className={styles.input}>
             <input
               type="text"

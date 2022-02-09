@@ -1,18 +1,20 @@
 .container {
   @apply h-full w-full bg-[url("/img/bg-header-desktop.svg")] bg-no-repeat font-spartan;
 
-  .header {
+  .searchBar {
     @apply bg-white rounded-[5px] flex flex-col overflow-hidden p-[20px] pr-[24px];
     box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
 
     .input {
+      @apply flex justify-between;
+
       input {
         border: none transparent;
         outline: none;
       }
 
       .clear {
-        @apply text-grey font-bold leading-[24px] text-[13px];
+        @apply text-grey font-bold leading-[24px] text-[13px] hover:text-green hover:underline;
       }
     }
 
@@ -21,7 +23,7 @@
     }
   }
 
-  .header.active {
-    @apply gap-[15px];
+  .searchBar.active {
+    @apply gap-[20px];
   }
 }
