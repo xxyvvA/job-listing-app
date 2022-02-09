@@ -9,6 +9,7 @@
       @apply flex justify-between;
 
       input {
+        @apply w-full;
         border: none transparent;
         outline: none;
       }
@@ -26,4 +27,8 @@
   .searchBar.active {
     @apply gap-[20px];
   }
+}
+
+.main {
+  @apply flex flex-col gap-[40px] mt-[56px] bg-white;
 }

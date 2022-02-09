@@ -12,12 +12,19 @@ html {
   height: 100%;
 }
 
-body > div {
+body > div:not(#__next-build-watcher) {
   height: 100%;
   background-color: white;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   background-image: url("/img/bg-header-mobile.svg");
+  background-size: 100%;
   background-repeat: no-repeat;
   padding: 24px;
+}
+
+@media screen and (min-width: 1024px) {
+  body > div:not(#__next-build-watcher) {
+    background-image: url("/img/bg-header-desktop.svg");
+  }
 }

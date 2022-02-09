@@ -1,2 +1,64 @@
 .container {
+  @apply relative rounded-[5px] flex flex-col lg:flex-row lg:gap-[24px] lg:items-center border-l-[5px] border-white hover:border-green pl-[19px] pb-[24px] pr-[24px] pt-[32px];
+  box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+
+  .logo {
+    @apply w-[48px] h-[48px] lg:w-[88px] lg:h-[88px] absolute lg:static top-[-24px];
+  }
+
+  .information {
+    @apply flex flex-col gap-2 font-spartan pb-4 lg:pb-0 border-b border-[#B7C4C4] lg:border-none;
+
+    .sensitive {
+      @apply flex gap-4 font-bold items-center;
+
+      .name {
+        @apply text-green text-[13px] leading-[15px];
+      }
+
+      .extra {
+        @apply flex gap-2;
+
+        .new {
+          @apply bg-green px-2 pt-[6px] pb-[4px] rounded-[12px];
+
+          p {
+            @apply text-[11px] text-white leading-[14px] tracking-[-0.08px];
+          }
+        }
+
+        .featured {
+          @apply rounded-[12px] bg-black px-2 pt-[6px] pb-[4px];
+
+          p {
+            @apply text-white text-[11px] tracking-[-0.08px] leading-[14px];
+          }
+        }
+      }
+    }
+
+    .position {
+      @apply font-bold text-[15px] hover:text-green leading-[24px] cursor-pointer;
+    }
+
+    .postInfo {
+      @apply text-[13px] leading-[24px] text-grey;
+    }
+  }
+
+  .tags {
+    @apply pt-4 lg:pt-0 flex gap-4 flex-wrap lg:absolute lg:right-0;
+
+    .text {
+      @apply bg-[rgba(92,165,165,0.1)] py-1 px-[10px] rounded-[4px] hover:bg-green;
+
+      p {
+        @apply font-bold text-[13px] text-green  leading-[24px];
+      }
+    }
+
+    .text:hover p {
+      @apply text-white;
+    }
+  }
 }

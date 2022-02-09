@@ -14,7 +14,7 @@ const Head: FC<Props> = ({ title = "", description = "", url = "", ogImage = "" 
     <title>{title}</title>
     <meta name={"description"} content={description} />
     <meta name={"viewport"} content={"width=device-width, initial-scale=1"} />
-    <link rel={"icon"} sizes={"192x192"} href={"/static/touch-icon.png"} />
+    <link rel={"icon"} sizes={"192x192"} href={"/img/bg-header-mobile.svg"} />
     <link rel={"apple-touch-icon"} href={"/static/touch-icon.png"} />
     <link rel={"mask-icon"} href={"/static/favicon-mask.svg"} color={"#49B882"} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
