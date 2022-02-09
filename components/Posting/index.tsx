@@ -69,6 +69,7 @@ const Post: FC<props> = ({
         {tags.current.map((item) => {
           return (
             <button
+              key={item}
               className={styles.text}
               onClick={() => {
                 if (!list.includes(item)) {
