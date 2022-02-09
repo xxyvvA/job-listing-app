@@ -36,7 +36,11 @@ const Home: NextPage = () => {
           <div className={styles.tags}>
             {tags.map((tag) => {
               return (
-                <LookUp tag={tag} setTags={() => setTags(tags.filter((item) => item !== tag))} />
+                <LookUp
+                  tag={tag}
+                  setTags={() => setTags(tags.filter((item) => item !== tag))}
+                  key={tag}
+                />
               );
             })}
           </div>
@@ -64,6 +68,7 @@ const Home: NextPage = () => {
                 tools={post.tools}
                 list={tags}
                 setTags={setTags}
+                key={post.id}
               />
             );
           }
@@ -85,6 +90,7 @@ const Home: NextPage = () => {
                 tools={post.tools}
                 list={tags}
                 setTags={setTags}
+                key={post.id}
               />
             )
           );
