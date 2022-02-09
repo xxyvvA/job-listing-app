@@ -30,5 +30,5 @@
 }
 
 .main {
-  @apply flex flex-col gap-[40px] mt-[56px] bg-white;
+  @apply flex flex-col gap-[40px] mt-[56px] bg-white lg:p-[20px];
 }

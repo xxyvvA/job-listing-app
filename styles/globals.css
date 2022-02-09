@@ -18,6 +18,7 @@ body > div:not(#__next-build-watcher) {
   display: flex;
   flex-direction: column;
   background-image: url("/img/bg-header-mobile.svg");
+  background-color: #5ca5a5;
   background-size: 100%;
   background-repeat: no-repeat;
   padding: 24px;
