@@ -1,0 +1,14 @@
+.container {
+  @apply rounded-[4px] overflow-hidden flex;
+  .text {
+    @apply px-[8px] py-[4px] bg-[rgba(92,165,165,0.1)];
+
+    .tag {
+      @apply text-green font-spartan font-bold;
+    }
+  }
+
+  .close {
+    @apply bg-green hover:bg-black p-[9.5px];
+  }
+}
