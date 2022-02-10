@@ -1,5 +1,5 @@
 {
-  "name": "rock-paper-scissors",
+  "name": "job-listing-app",
   "private": true,
   "scripts": {
     "dev": "next dev",
